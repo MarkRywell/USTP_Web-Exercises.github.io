@@ -4,7 +4,7 @@
     }
     .card {
      /* Add shadows to create the "card" effect */
-     border: 3px solid teal;
+     border: 3px solid rgb(42, 81, 255);
      border-radius: 5px;
      width: 70%;
      margin-top:3%;
@@ -29,7 +29,7 @@
     
     
 .Nav{
-    background-color: teal; 
+    background-color: rgb(42, 81, 255); 
     list-style-type: none;
     }
     .Nav li{
