@@ -20,7 +20,7 @@
     .card-body{padding:5%;}
     /* On mouse-over, add a deeper shadow */
     .card:hover {
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     box-shadow: 5px 8px 10px 5px rgba(0,0,0,0.2);
     }
 
     .highlight {

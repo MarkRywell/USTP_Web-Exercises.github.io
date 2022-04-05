@@ -1,5 +1,5 @@
 .container{
-    padding-top:30px;
+    
     overflow: hidden;
     }
     .card {
@@ -20,7 +20,7 @@
     .card-body{padding:5%;}
     /* On mouse-over, add a deeper shadow */
     .card:hover {
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 5px 8px 10px 5px rgba(0,0,0,0.2);
     }
 
     .highlight {
@@ -35,13 +35,30 @@
     .Nav li{
     display: inline-block;
     font-size: 20px;
-    padding: 20px;
+    
     }
     .Nav li a{
+    display: block;
     text-decoration: none;
-    color:white
+    color:white;
+    padding: 20px;
     }
 
+    li a:hover{
+    border-radius: 20px;
+    background-color: rgb(56, 142, 255);
+    color: black;
+    transition: 0.5s;
+    }
+
+    
 html {
     scroll-behavior: smooth;
+}
+
+#name {
+    
+    padding-right: 1050px;
+    font-size: 40px;
+    font-weight: bold;
 }

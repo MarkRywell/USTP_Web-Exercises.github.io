@@ -5,11 +5,13 @@
     }
     .card {
      /* Add shadows to create the "card" effect */
+     background-color: antiquewhite;
      border: 3px solid rgb(42, 81, 255);
      border-radius: 5px;
      width: 70%;
      margin-top:3%;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     clear: both;
      transition: 0.3s;
     }
     .Paraheader{
@@ -19,10 +21,10 @@
     border-bottom: 2px solid rgb(192, 192, 192);
     text-align: center;
     }
-    .card-body{padding:5%;}
+    .card-body{padding:5%; line-height: 20px;}
     /* On mouse-over, add a deeper shadow */
     .card:hover {
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 5px 8px 10px 5px rgba(0,0,0,0.2);
     }
 
     .highlight {
@@ -35,6 +37,7 @@
     list-style-type: none;
     text-align: left;
     position: fixed; top:0; width:100%;
+    text-align: left;
     }
 
 
@@ -50,14 +53,45 @@
     }
 
 li a:hover {
+    border-radius: 20px;
     background-color: rgb(56, 142, 255);
     color: black;
+    transition: 0.5s;
+}
+
+.stickRight {
+    float: right;
+    padding-right: 20px;
 }
 
 .active {
     background-color: hsl(212, 100%, 69%);
 }
 
+#myphoto {
+    
+    width: 250px; 
+    height: 300px; 
+    clear: left; 
+    padding-left: 200px; 
+    padding-top: 50px; 
+}
+
+
+#name {
+    float: right; 
+    padding-top: 170px;
+    padding-right: 1050px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(162, 181, 235);
 }
