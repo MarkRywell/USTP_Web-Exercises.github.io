@@ -85,7 +85,11 @@ li a:hover {
     font-size: 40px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+}
 
+#name:hover{
+    text-shadow: 3px 2px rgba(54, 67, 107, 0.603);
+    transition: 1.5s
 }
 
 html {
