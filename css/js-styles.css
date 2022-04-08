@@ -1,0 +1,209 @@
+.container{
+    padding-top:30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding-left: 10px;
+    }
+    .card {
+     /* Add shadows to create the "card" effect */
+     background-color: antiquewhite;
+     border: 3px solid rgb(42, 81, 255);
+     border-radius: 5px;
+     width: 70%;
+     margin-top:3%;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     clear: both;
+     transition: 0.3s;
+    }
+    .Paraheader{
+    padding:1%; 
+    font-size: 20px; 
+    font-weight: 700;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    text-align: center;
+    }
+    .card-body{padding:5%; line-height: 20px;}
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 5px 8px 10px 5px rgba(0,0,0,0.2);
+    }
+
+    .highlight {
+        font-weight: bold;
+    }
+    
+.Webname{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(175, 175, 175);
+    margin: 5px;
+}
+
+.NavBar{
+    background-color: rgb(42, 81, 255); 
+    list-style-type: none;
+    text-align: left;
+    position: fixed; top:0; width:100%;
+    text-align: left;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    }
+
+
+.Nav li{
+    display: inline-block;
+    font-size: 20px;
+    }
+.Nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color:white;
+    }
+
+li a:hover {
+    border-radius: 20px;
+    background-color: rgb(56, 142, 255);
+    color: black;
+    transition: 0.5s;
+}
+
+
+.active {
+    background-color: hsl(212, 100%, 69%);
+}
+
+#myphoto {
+    
+    width: 100%;
+    max-width: 250px; 
+    height: auto; 
+    clear: left; 
+    
+    padding-left: 200px; 
+    padding-top: 50px; 
+}
+
+
+#name {
+    float: right; 
+    padding-top: 170px;
+    padding-right: 1050px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#name:hover{
+    text-shadow: 3px 2px rgba(54, 67, 107, 0.603);
+    transition: 1.5s
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(162, 181, 235);
+}
+
+@media screen and (max-width: 855px) {
+  .Webname {
+        font-size: 20;
+       
+    }
+
+    .Nav li{
+        font-size: 10;
+    }
+    .Nav li a {
+       
+       padding-inline: 2px;
+    }
+}
+@media screen and (max-width: 675px) {
+    .Webname {
+          font-size: 80%;
+      }
+      .Nav li{
+          font-size: 100%;
+      }
+      .Nav li a {     
+         padding-inline: 2px;
+      }
+  }
+
+@media screen and (max-width: 500px){
+    .Nav {
+        position: absolute;
+            border-radius: 0px 0px 20px 20px;
+            right: 0px;
+            height: 50vh;
+            top: 8vh;
+            background-color: rgb(42, 81, 255); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 290px;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+            
+    }
+
+    .Nav li {
+        opacity: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    li a:hover{
+        width: 200px;
+        text-align: center;
+    }
+
+    #myphoto {
+        padding-left: 20px;
+    }
+
+    .Webname {
+        font-size: 20px;
+    }
+
+}
+
+.Nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes NavFade {
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
