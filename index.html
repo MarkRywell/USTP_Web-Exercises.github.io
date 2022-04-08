@@ -22,25 +22,66 @@
         
         p {
             text-decoration: none;
-            font-size: 20px;
+           
+            
         }
 
         .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 500px;
+            gap:10px;
             padding-top: 70px;
             padding-left: 10px;
             line-height: 50px;
             text-decoration: none;
+            font-size: 20px;
+            font-weight: bolder;
+           
         }
+
+        .container a{
+            color: rgb(53, 46, 46);
+        }
+
 
         a:link {
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+            color: blue;
         }
 
         .headername {
             padding-left: 10px;
+        }
+
+        .html{
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            margin: auto;
+            text-align: center;
+        }
+        .css{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin: auto;
+            text-align: justify;
+        }
+        .js{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            margin: auto;
+            text-align: center;
         }
     </style>
 </head>
@@ -51,20 +92,38 @@
     </nav>
     
     <div class="container">
-    <h2>Mark Rywell G. Gaje</h2>
-    <h2>BSIT - 2R5</h2><br>
-    
+        <div class = "owner">
+            <h2>Mark Rywell G. Gaje</h2>
+            <h2>BSIT - 2R5</h2><br>
+        </div>
 
-    <p>
-    <a href="onlinecv.html" target="blank">Online CV</a><br>
-    <a href="css-box-models.html" target="blank">Exercise: Box Models</a><br>
-    <a href="css-sizing.html" target="blank">Exercise: Sizing Elements in CSS</a><br>
-    <a href="apply-css.html" target="blank">Exercise: Appling CSS to HTML document</a><br>
-    <a href="css-display.html" target="blank">Exercise: Using the display property</a><br>
-    <a href="css-position.html" target="blank">Exercise: Using the position property</a><br>
-    <a href="css-float.html" target="blank">Exercise: Using float and clear properties</a><br>
-    <a href="js-collapse.html" target="blank">Exercise: Javascript Collapsing Navbar</a>
-    </p> 
+        <p>
+            <div class="html">
+                <img src="images/html_logo.png" style="width: 250px; height: 250px; position: relative; top: -60px">
+                <div class="links">
+                    <a href="onlinecv.html" target="blank">Online CV</a><br>
+                </div>
+            </div>
+
+            <div class="css">
+                <img src="images/css_logo.png" style="width: 250px; height: 250px; padding-left: 45px; position: relative; top: 20px;">
+                <div class="links">
+                    <a href="css-box-models.html" target="blank">Exercise: Box Models</a><br>
+                    <a href="css-sizing.html" target="blank">Exercise: Sizing Elements in CSS</a><br>
+                    <a href="apply-css.html" target="blank">Exercise: Appling CSS to HTML document</a><br>
+                    <a href="css-display.html" target="blank">Exercise: Using the display property</a><br>
+                    <a href="css-position.html" target="blank">Exercise: Using the position property</a><br>
+                    <a href="css-float.html" target="blank">Exercise: Using float and clear properties</a><br>
+                </div>
+            </div>
+
+            <div class="js">
+                <img src="images/js_logo.png" style="width: 220px; height: 250px; position: relative; top: -70px">
+                <div class="links">
+                    <a href="js-collapse.html" target="blank" style="clear: both;">Exercise: Javascript Collapsing Navbar</a>
+                </div>
+            </div>
+        </p> 
     </div>
     
 </body>
