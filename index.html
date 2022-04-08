@@ -7,26 +7,65 @@
     <title>Main</title>
 
     <style>
+        body {
+            margin: 0;
+            background-color: rgb(235, 229, 222);
+        }
+        nav {
+        background-color: rgb(42, 255, 166); 
+        list-style-type: none;
+        text-align: left;
+        position: fixed; top:0; width:100%;
+        text-align: left;
+        width: 100%;
+        }
+        
         p {
             text-decoration: none;
             font-size: 20px;
         }
+
+        .container {
+            padding-top: 70px;
+            padding-left: 10px;
+            line-height: 50px;
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .headername {
+            padding-left: 10px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>HTML CSS Exercises</h1>
+    <nav>
+        <h1 class="headername">HTML CSS Exercises</h1>
+    </nav>
+    
+    <div class="container">
     <h2>Mark Rywell G. Gaje</h2>
-    <h2>BSIT - 2R5</h2><br><br>
+    <h2>BSIT - 2R5</h2><br>
+    
 
     <p>
-    <a href="onlinecv.html">Online CV</a><br>
-    <a href="css-box-models.html">Exercise: Box Models</a><br>
-    <a href="css-sizing.html">Exercise: Sizing Elements in CSS</a><br>
-    <a href="apply-css.html">Exercise: Appling CSS to HTML document</a><br>
-    <a href="css-display.html">Exercise: Using the display property</a><br>
-    <a href="css-position.html">Exercise: Using the position property</a><br>
-    <a href="css-float.html">Exercise: Using float and clear properties</a>
+    <a href="onlinecv.html" target="blank">Online CV</a><br>
+    <a href="css-box-models.html" target="blank">Exercise: Box Models</a><br>
+    <a href="css-sizing.html" target="blank">Exercise: Sizing Elements in CSS</a><br>
+    <a href="apply-css.html" target="blank">Exercise: Appling CSS to HTML document</a><br>
+    <a href="css-display.html" target="blank">Exercise: Using the display property</a><br>
+    <a href="css-position.html" target="blank">Exercise: Using the position property</a><br>
+    <a href="css-float.html" target="blank">Exercise: Using float and clear properties</a><br>
+    <a href="js-collapse.html" target="blank">Exercise: Javascript Collapsing Navbar</a>
     </p> 
+    </div>
     
 </body>
 </html>
